@@ -1,0 +1,21 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/v1_create_table_usuario.sql # Tabla principal de usuarios
+
+  - include:
+      file: db/changelog/v1_create_table_vehiculo.sql # Vehículos asociados a usuarios
+
+  - include:
+      file: db/changelog/v1_create_table_zona.sql # zona físicos dentro de zonas
+
+  - include:
+      file: db/changelog/v1_create_table_espacio.sql # Espacios disponibles para reserva
+
+  - include:
+      file: db/changelog/v1_create_table_reserva.sql # Reservas realizadas por usuarios
+
+  - include:
+      file: db/changelog/v1_create_table_registro.sql # Registros de entrada y salida
+
+  - include:
+      file: db/changelog/v1_create_table_pago.sql # Pagos relacionados con reservas
